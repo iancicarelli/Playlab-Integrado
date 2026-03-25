@@ -1,0 +1,7 @@
+package com.backend_playlab.exception;
+
+public class BadRequestException extends RuntimeException {
+    public BadRequestException(String message) {
+        super(message);
+    }
+}
