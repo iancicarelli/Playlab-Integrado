@@ -3,6 +3,15 @@
 Guía de inicio rápido para levantar el proyecto completo (Backend + Frontend) en tu entorno local.
 
 ---
+## 🚀 Demo en Vivo
+
+¡El frontend de Playlab está desplegado y listo para usarse! Puedes probar los minijuegos (que utilizan tu cámara web con MediaPipe) directamente desde tu navegador sin instalar nada:
+
+🎮 **¡Juega ahora!** 👉 **[https://playlab-integrado.onrender.com](https://playlab-integrado.onrender.com)**
+
+> **Nota sobre esta versión web:** Actualmente está desplegada la interfaz gráfica (Frontend) para demostración de los juegos con visión artificial. Las funciones que dependen del backend (como registro en base de datos o ranking global) operan de forma local o simulada en esta demo.
+
+---
 
 ## 📋 Requisitos Previos
 
