@@ -101,3 +101,52 @@ Bash
 
 cd Playlab
 npm run dev
+
+## 📸 Capturas de Pantalla
+
+A continuación, algunas vistas de la interfaz y los minijuegos de Playlab:
+
+### Autenticación y Menú
+| Login | Registro |
+| :---: | :---: |
+| ![Login](Capturas/Login.png) | ![Register](Capturas/Register.png) |
+
+| Menú Principal | Puntuaciones (Score) |
+| :---: | :---: |
+| ![Menú](Capturas/MenuPlaylab.png) | ![Score](Capturas/Score.png) |
+
+---
+
+### 🦖 Juego: Dino
+| Inicio / Gameplay | Gameplay Avanzado |
+| :---: | :---: |
+| ![Dino](Capturas/Dino.png) | ![Dino 2](Capturas/DIno2.png) |
+
+| Game Over |
+| :---: |
+| ![Dino 3](Capturas/DIno3.png) |
+
+---
+
+### 🧠 Juego: Simon Gesture
+| Menú del Juego | Gameplay (Gestos) | Game Over |
+| :---: | :---: | :---: |
+| ![Simon Menu](Capturas/SimonMenu.png) | ![Simon Gesture](Capturas/SimonGesture.png) | ![Simon Lost](Capturas/SimoneGestureLost.png) |
+
+---
+
+### 🐍 Juego: Snake
+| Inicio | Gameplay | Gameplay Avanzado | Game Over |
+| :---: | :---: | :---: | :---: |
+| ![Snake 1](Capturas/Snake1.png) | ![Snake 2](Capturas/Snake2.png) | ![Snake 3](Capturas/Snak3.png) | ![Snake 4](Capturas/snake4.png) |
+
+---
+
+### 🛸 Juego: UFO Evader
+| Menú Principal | Controles |
+| :---: | :---: |
+| ![UFO](Capturas/Ufo.png) | ![UFO Controls](Capturas/UfoControls.png) |
+
+| Gameplay | Game Over |
+| :---: | :---: |
+| ![UFO Evader](Capturas/UFOevader.png) | ![UFO Lost](Capturas/UfoLost.png) |
