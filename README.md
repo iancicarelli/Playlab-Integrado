@@ -150,3 +150,44 @@ A continuación, algunas vistas de la interfaz y los minijuegos de Playlab:
 | Gameplay | Game Over |
 | :---: | :---: |
 | ![UFO Evader](Capturas/UFOevader.png) | ![UFO Lost](Capturas/UfoLost.png) |
+
+---
+
+## 🏗️ Arquitectura y Documentación Técnica
+
+En esta sección se detalla la estructura lógica, el modelo de datos y los procesos que componen Playlab.
+
+### Modelo C4
+Utilizamos el modelo C4 para describir la arquitectura del software en diferentes niveles de abstracción.
+
+| Nivel 1: Contexto | Nivel 2: Contenedores |
+| :---: | :---: |
+| ![C4 Nivel 1](Documentation/playlab-c4-nivel1.png) | ![C4 Nivel 2](Documentation/playlab-c4-nivel2.png) |
+
+| Nivel 3: Componentes (Frontend) | Nivel 3: Componentes (Backend) |
+| :---: | :---: |
+| ![C4 Nivel 3A](Documentation/playlab-c4-nivel3a.png) | ![C4 Nivel 3B](Documentation/playlab-c4-nivel3b.png) |
+
+---
+
+### Modelos de Datos y Dominio
+
+| Modelo de Dominio | Modelo Relacional (MR) |
+| :---: | :---: |
+| ![Modelo Dominio](Documentation/Dominio_Play_Lab.png) | ![Modelo Relacional](Documentation/MR_Play_Lab.png) |
+
+---
+
+### Procesos (BPMN)
+Diagrama de notación de procesos de negocio para la lógica del sistema.
+
+![BPMN](Documentation/bpmn.png)
+
+---
+
+### 📄 Documentación Detallada (PDFs)
+
+Para una comprensión profunda del proyecto, puedes consultar los siguientes documentos adjuntos en el repositorio:
+
+* 📘 **[Descripción de la Arquitectura de Playlab](Documentation/arquitectura%20Playlab.pdf)**: Detalle técnico sobre las decisiones de diseño y tecnologías.
+* 📕 **[IEEE 830 SRS - Play Lab](Documentation/ieee830%20SRS%20Play%20Lab.pdf)**: Especificación de Requisitos de Software basada en el estándar IEEE 830.
