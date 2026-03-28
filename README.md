@@ -1,1 +1,103 @@
-# Playlab-Integrado
+# 🎮 Playlab-Integrado
+
+Guía de inicio rápido para levantar el proyecto completo (Backend + Frontend) en tu entorno local.
+
+---
+
+## 📋 Requisitos Previos
+
+Antes de comenzar, asegúrate de tener instaladas las siguientes herramientas en tu sistema. Puedes verificar tus versiones ejecutando los comandos de la derecha:
+
+| Herramienta | Versión Requerida | Comando de Verificación |
+| :--- | :--- | :--- |
+| **Node.js** | 18+ | `node -v` y `npm -v` |
+| **Java** | 17 | `java -version` |
+| **Docker** | Reciente | `docker -v` |
+| **Maven** | Opcional* | `mvn -v` |
+
+> *Nota: Utilizamos `mvnw` (Maven Wrapper) incluido en el proyecto, por lo que tener Maven instalado globalmente es opcional.*
+
+---
+
+## ⚙️ 1. Configuración del Backend (Spring Boot + MySQL)
+
+Puedes levantar el backend de dos maneras: usando Docker (recomendado) o de forma manual.
+
+### Opción A: Con Docker (Recomendado y más fácil)
+Esta opción levanta tanto la base de datos MySQL como el backend automáticamente.
+
+1. Entra a la carpeta del backend:
+   cd backend-playlab
+2. Construye y levanta los contenedores:
+    docker compose up --build
+    📍 El backend quedará disponible en: http://localhost:8080
+    Para detener y limpiar los contenedores, usa:
+    docker compose down -v
+Opción B: Sin Docker (Manual)
+
+Si prefieres no usar Docker, necesitas tener MySQL instalado y corriendo en tu máquina.
+
+    Entra a la carpeta del backend y copia el archivo de variables de entorno:
+    Bash
+
+    cd backend-playlab
+    cp .env.example .env
+
+    Edita el archivo .env con tus credenciales de MySQL:
+    Fragmento de código
+
+    MYSQL_DATABASE=db-playlab
+    MYSQL_ROOT_PASSWORD=supersecret
+    MYSQL_USER=playlab
+    MYSQL_PASSWORD=playlab
+    JWT_PRIVATE_KEY=replace-with-base64-key
+
+    Ejecuta el backend usando Maven Wrapper:
+    Bash
+
+    ./mvnw spring-boot:run
+
+💻 2. Configuración del Frontend (Vue + Vite)
+
+Abre una nueva terminal para mantener el backend corriendo, y sigue estos pasos:
+
+    Entra a la carpeta del frontend:
+    Bash
+
+    cd Playlab
+
+    Instala las dependencias:
+    Bash
+
+    npm install
+
+    Levanta el servidor de desarrollo:
+    Bash
+
+    npm run dev
+
+    📍 El frontend quedará disponible en: http://localhost:5173
+
+🔑 Usuarios de Prueba
+
+Para facilitarte las pruebas, el backend crea automáticamente un usuario por defecto al inicializar la base de datos:
+
+    Usuario: tester
+
+    Contraseña: 123
+
+🔄 Flujo de Trabajo (Orden Correcto)
+
+SIEMPRE que vayas a retomar el trabajo en el proyecto, este es el orden que debes seguir:
+
+Terminal 1 (Backend):
+Bash
+
+cd backend-playlab
+docker compose up
+
+Terminal 2 (Frontend):
+Bash
+
+cd Playlab
+npm run dev
